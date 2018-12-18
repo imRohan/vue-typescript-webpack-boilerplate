@@ -6,6 +6,6 @@ Using this for personal projects.
 ### Build
 
 - Install Yarn and run `yarn` 
-- Then run `npm run dev`
+- Then run `yarn run dev`
 - Navigate to `localhost:8080`
 
