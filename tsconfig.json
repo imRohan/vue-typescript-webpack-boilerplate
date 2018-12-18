@@ -1,0 +1,35 @@
+{
+	"compilerOptions": {
+    "lib": [
+      "es6",
+      "es2017",
+      "dom"
+    ],
+    "allowJs": true,
+    "checkJs": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "pretty": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es5",
+    "outDir": "dist",
+    "noImplicitReturns": true,
+    "baseUrl": "./",
+    "paths": {
+      "MIXINS/*": ["./app/js/mixins/*"],
+      "COMPONENTS/*": ["./app/js/components/*"],
+      "TEMPLATES/*": ["./app/templates/*"],
+      "INTERFACES/*": ["./interfaces/*"],
+      "ASSETS/*": ["./app/assets/*"],
+      "ROOT_JS/*": ["./app/js/*"],
+    },
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

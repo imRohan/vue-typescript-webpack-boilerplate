@@ -1,0 +1,42 @@
+{
+  "extends": "stylelint-config-recommended",
+  "rules": {
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": [
+        "extends",
+        "include",
+        "mixin",
+        "if",
+        "else"
+      ]
+    }],
+    "indentation"                                    : 2,
+    "string-quotes"                                  : "single",
+    "no-duplicate-selectors"                         : true,
+    "color-hex-case"                                 : "upper",
+    "color-hex-length"                               : "long",
+    "color-named"                                    : "never",
+    "selector-combinator-space-after"                : "always",
+    "selector-attribute-quotes"                      : "always",
+    "selector-attribute-operator-space-before"       : "always",
+    "selector-attribute-operator-space-after"        : "always",
+    "selector-attribute-brackets-space-inside"       : "always",
+    "declaration-block-trailing-semicolon"           : "never",
+    "declaration-colon-space-before"                 : "never",
+    "declaration-colon-space-after"                  : "always",
+    "number-leading-zero"                            : "always",
+    "function-url-quotes"                            : "always",
+    "font-weight-notation"                           : "numeric",
+    "font-family-name-quotes"                        : "always-unless-keyword",
+    "comment-whitespace-inside"                      : "always",
+    "comment-empty-line-before"                      : "always",
+    "rule-empty-line-before"                         : "never-multi-line",
+    "selector-pseudo-element-colon-notation"         : "double",
+    "selector-pseudo-class-parentheses-space-inside" : "always",
+    "media-feature-range-operator-space-before"      : "always",
+    "media-feature-range-operator-space-after"       : "always",
+    "media-feature-parentheses-space-inside"         : "always",
+    "media-feature-colon-space-before"               : "always",
+    "media-feature-colon-space-after"                : "always"
+  },
+}

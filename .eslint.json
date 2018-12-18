@@ -1,0 +1,93 @@
+{
+  "env": {
+      "browser"  : true,
+      "commonjs" : true,
+      "es6"      : true,
+      "jquery"   : true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 2017
+  },
+  "plugins": [
+    "no-loops",
+    "filenames"
+  ],
+  "rules": {
+      "indent": [
+          "error",
+          2
+      ],
+      "linebreak-style": [
+          "error",
+          "unix"
+      ],
+      "quotes": [
+          "error",
+          "single"
+      ],
+      "semi": [
+          "error",
+          "never"
+      ],
+      "filenames/match-regex"    : "error",
+      "filenames/match-exported" : ["error", "camel"],
+      "no-loops/no-loops"        : 2,
+      "no-console"               : 0,
+      "no-debugger"              : "warn",
+      "curly"                    : "warn",
+      "default-case"             : "error",
+      "eqeqeq"                   : "error",
+      "no-else-return"           : "error",
+      "no-magic-numbers": ["error", {
+        "ignore": [-1, 0, 1, 2]
+      }],
+      "capitalized-comments": "warn",
+      "comma-style": "warn",
+      "max-len": ["warn", 80, 2, {
+        "ignoreUrls"    : true,
+        "ignoreStrings" : true
+      }],
+      "multiline-comment-style" : "warn",
+      "no-lonely-if"            : "error",
+      "no-negated-condition"    : "error",
+      "no-multiple-empty-lines": ["warn", {
+        "max"    : 2,
+        "maxEOF" : 0,
+        "maxBOF" : 0
+      }],
+      "no-tabs"               : "error",
+      "no-trailing-spaces"    : "warn",
+      "no-unneeded-ternary"   : "error",
+      "object-curly-spacing"  : "warn",
+      "operator-linebreak"    : ["error", "before"],
+      "space-before-blocks"   : "warn",
+      "space-in-parens"       : ["warn", "never"],
+      "arrow-body-style"      : ["error", "always"],
+      "no-var"                : "error",
+      "prefer-arrow-callback" : "error",
+      "prefer-const"          : "error",
+      "prefer-destructuring": ["warn", {
+        "object" : true,
+        "array"  : true
+      }],
+      "prefer-rest-params": "warn",
+      "complexity": [2, 5],
+      "max-statements-per-line": [2, {
+        "max": 1
+      }],
+      "max-nested-callbacks": [2, 2],
+      "max-depth": [2, {
+        "max": 2
+      }],
+      "dot-notation"         : "error",
+      "guard-for-in"         : "error",
+      "vars-on-top"          : "error",
+      "yoda"                 : "error",
+      "no-floating-decimal"  : "error",
+      "no-use-before-define" : "error"
+  }
+}
