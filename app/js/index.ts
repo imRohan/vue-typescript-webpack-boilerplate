@@ -24,9 +24,12 @@ new Vue({
     }
   },
   methods: {
+    sayHello() {
+      const _string: string = 'Hello World!'
+      this.data = _string
+    }
   },
-  mounted() {
-    console.log('Mounted Main')
-    this.data = 'Hello World!'
+  created() {
+    this.sayHello()
   },
 })

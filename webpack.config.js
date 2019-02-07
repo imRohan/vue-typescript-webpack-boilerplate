@@ -6,9 +6,9 @@ module.exports = (env, options) => {
   console.log(`Running Webpack in mode: ${options.mode}`)
   const PRODUCTION = options.mode === 'production'
   return {
-    entry: ['babel-polyfill', './app/js/index.ts'],
+    entry: ['./app/js/index.ts'],
     output: {
-      filename: './bundle.js'
+      filename: 'bundle.js'
     },
     watch: PRODUCTION ? false : true,
     devServer: {
@@ -44,23 +44,6 @@ module.exports = (env, options) => {
     devtool: 'sourcemap',
     module: {
       rules: [
-        {
-          enforce: 'pre',
-          test: /\.js$/,
-          exclude: /node_modules/,
-          loader: 'eslint-loader',
-          query: {
-            presets: ['es2015']
-          },
-        },
-        {
-          test: /\.js$/,
-          exclude: /node_modules/,
-          loader: 'babel-loader',
-          query: {
-            presets: ['es2015']
-          },
-        },
         {
           test: /\.ts$/,
           exclude: /node_modules/,
