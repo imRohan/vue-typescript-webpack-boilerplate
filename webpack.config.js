@@ -41,7 +41,7 @@ module.exports = (env, options) => {
         })
       ] : []
     },
-    devtool: 'sourcemap',
+    devtool: 'source-map',
     module: {
       rules: [
         {
@@ -52,21 +52,21 @@ module.exports = (env, options) => {
         {
           test: /\.css$/,
           exclude: /node_modules/,
-          loaders: 'style-loader!css-loader',
+          use: ['style-loader', 'css-loader'],
         },
         {
-          test: /\.scss$/,
+          test: /\.s[ac]ss$/i,
           exclude: /node_modules/,
-          loaders: 'style-loader!css-loader!sass-loader',
+          use: ['style-loader', 'css-loader', 'sass-loader'],
         },
         {
           test: /\.html$/,
           exclude: /node_modules/,
-          loaders: 'html-loader',
+          loader: 'html-loader',
         },
         {
           test: /\.(eot|svg|ttf|woff)$/,
-          loader: 'file-loader?name=[name]-[hash].[ext]',
+          loader: 'file-loader',
         },
       ],
     },
